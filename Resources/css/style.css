@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: scroll;
 }
 
 html {
@@ -35,6 +34,7 @@ html {
     width: 70%;
     height: 100%;
     background-color: white;
+    overflow: scroll;
 }
 
 
@@ -192,4 +192,22 @@ html {
 
 .date{
     text-align: right
+}
+
+.movies {
+    width: 100%;
+    margin-left: 20px;
+}
+
+
+.movie-title {
+    color: #3498db;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px 0 0 20px;
+}
+
+.col {
+    margin: 0 20px;
+    
 }
