@@ -19,6 +19,7 @@ html {
 
 .left-blue {
     position: fixed;
+    padding: 10px;
     color: white;
     width: 50%;
     height: 100%;
@@ -110,11 +111,12 @@ html {
 }
 
 .bottom-line {
-   text-align: center;
+    text-align:center;
+    color: white;
     bottom:0;
     right:0;
     left: 0;
-    position:absolute;;
+    position:absolute;
     padding-right: 10px;
     padding-bottom: 10px;
     font-size: 18px;
@@ -167,8 +169,4 @@ html {
     padding: 10px;
     letter-spacing: 1px;
     word-spacing: 2px;
-}
-
-.last {
-    text-align: center
 }
