@@ -21,7 +21,7 @@ html {
     position: fixed;
     padding: 10px;
     color: white;
-    width: 40%;
+    width: 30%;
     height: 100%;
     background-color: #3498db;
 }
@@ -31,7 +31,7 @@ html {
     position: fixed;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 70%;
     height: 100%;
     background-color: white;
 }
@@ -63,7 +63,7 @@ html {
     border-radius: 4px;
     display: block;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-bottom: 10px;
     border-radius: 50%;
     padding: 5px;
@@ -73,7 +73,7 @@ html {
 
 .img-circle:hover,
 .img-circle:active {
-    border: 2px solid #7cbde8;
+    border: 2px solid #92d2fa;
 }
 
 .main-nav {
@@ -111,6 +111,7 @@ html {
 }
 
 .bottom-line {
+    background-color: #3498db;
     text-align:center;
     color: white;
     bottom:0;
@@ -156,13 +157,13 @@ html {
 }
 
 .topic {
-    margin-top: 70px;
+    margin-top: 40px;
     text-align: center;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .info {
-    font-size: 20px;
+    font-size: 17.5px;
     text-align: justify;
     font-family: 'Lato';
     margin: 0px 20px 0 20px;
