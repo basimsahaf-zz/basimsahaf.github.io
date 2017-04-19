@@ -76,6 +76,7 @@ html {
     border: 2px solid #92d2fa;
 }
 
+
 .main-nav {
     float: right;
     list-style: none;
@@ -170,4 +171,24 @@ html {
     padding: 10px;
     letter-spacing: 1px;
     word-spacing: 2px;
+}
+
+.container {
+    margin: 80px auto auto 20px;
+    text-align: left;
+}
+.blue-head {
+    color: #3498db;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.info-white{
+    margin-top: 5px;
+    color: #3498db;
+    word-spacing: 3px;
+}
+
+.date{
+    text-align: right
 }
