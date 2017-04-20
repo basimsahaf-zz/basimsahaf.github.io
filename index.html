@@ -7,10 +7,31 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Dr+Sugiyama" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title> Basim Sahaf </title>
     </head>
     <body>
+<script>
+	jQuery('body').css('display','none');
+	jQuery(document).ready(function() {
+		jQuery('body').fadeIn();
+		jQuery('a').on('click',function(event){
+			var thetarget = this.getAttribute('target')
+			if (thetarget != "_blank"){			
+				var thehref = this.getAttribute('href')
+				event.preventDefault();
+				jQuery('body').fadeOut(function(){
+					//alert(thehref)
+					window.location = thehref					
+				});
+			}
+		});
+	});
+	setTimeout(function(){
+		jQuery('body').fadeIn();
+	},1000)
+</script>
         <div class="left-blue">
             <p class="logo"><b>basimsahaf</b></p>
                 <img class="img-circle" src="Resources/css/Images/20170415-DSC_0882%20(1).jpg" class="picture">
@@ -56,7 +77,7 @@
                     <div class="header">
                 <h2 class="blue-head"> WHY DID I CHOOSE THE UNIVERSITY OF WATERLOO?</h2></div>
                 <div class="info-white">
-                    <p class="nice-text">A leading university in Computer Science and Mathematics, University of Waterloo turned out to be the right place for me. Following are the two reasons that made me choose UWaterloo:<br></p>
+                    <p class="nice-text">A leading university in Computer Science and Mathematics, University of Waterloo turned out to be the right place for me. Following are the two reasons that made me choose UWaterloo:</p>
                     <br><li>Ability to get our hands dirty in the industry thorugh the co-op program</li>
                     <li>Focus on the mathematical knowledge of Computer Science</li></div>
                <div class="header">
