@@ -2701,6 +2701,7 @@
   from {
     opacity: 0;
     -webkit-transform: scale3d(.3, .3, .3);
+      -webkit-animation-duration: 1s;
     transform: scale3d(.3, .3, .3);
   }
 
@@ -2713,6 +2714,7 @@
   from {
     opacity: 0;
     -webkit-transform: scale3d(.3, .3, .3);
+      -webkit-animation-duration: 1s;
     transform: scale3d(.3, .3, .3);
   }
 
@@ -2723,6 +2725,7 @@
 
 .zoomIn {
   -webkit-animation-name: zoomIn;
+    -webkit-animation-duration: 1s;
   animation-name: zoomIn;
 }
 
@@ -2914,6 +2917,7 @@
   50% {
     opacity: 0;
     -webkit-transform: scale3d(.3, .3, .3);
+      -webkit-animation-duration: 1s;
     transform: scale3d(.3, .3, .3);
   }
 
@@ -2924,6 +2928,7 @@
 
 .zoomOut {
   -webkit-animation-name: zoomOut;
+    -webkit-animation-duration: 1s;
   animation-name: zoomOut;
 }
 
