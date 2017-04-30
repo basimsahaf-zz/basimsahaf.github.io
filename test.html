@@ -13,19 +13,19 @@
 <p id="demo"></p>
 
 <script>
-    var x = document.getElementById("myText");
-    function httpGet(theUrl){
+    var input = document.getElementById("myText").innerHTML;
+    function httpGet(theUrl)
+{
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
     xmlHttp.send( null );
     return xmlHttp.responseText;
+}
+    var myFunction =  function() {
+        console.log(input);
+    var y = httpGet(`http://ec2-54-69-73-17.us-west-2.compute.amazonaws.com:8000/notes/${input}`);
+    console.log(y);
     }
-  function  myFunction() {
-          console.log(x);
-
-        var y = httpGet(`132.148.77.112:8000/notes/${x}`);
-  console.log(y);
-  }
 </script>
 </body>
 </html>
