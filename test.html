@@ -14,7 +14,6 @@
 
 <script>
     var x = document.getElementById("myText").value;
-    console.log(x);
     function httpGet(theUrl){
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
@@ -22,6 +21,8 @@
     return xmlHttp.responseText;
     }
   function  myFunction() {
+          console.log(x);
+
         var y = httpGet(`132.148.77.112:8000/notes/${x}`);
   console.log(y);
   }
