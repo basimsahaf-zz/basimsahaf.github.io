@@ -8,6 +8,8 @@ function validiateInput() {
   if (atIndex < 1 || dotIndex < atIndex + 2 || dotIndex + 2 >= input.length) {
     /* validiates the input */
     $("#error").text("There was an error with your email"); /*error message */
+    $("#error").addClass("animated shake"); /* effects on error message*/
+    return false;
   } else {
     /*dynamically changes the title and subtitle text */
     $("#title").text("Please check your email");

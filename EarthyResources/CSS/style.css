@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -10,7 +10,7 @@ html {
   border-color: #A7A7A7;
   text-rendering: optimizeLegibility;
   font-size: 18px;
-  margin: 20px 20px;
+  margin: 0 20px;
   overflow: hidden;
 }
 
@@ -27,15 +27,15 @@ body {
 .title {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 300%;
-  margin: 40px 0 0 40px;
+  margin: 18% 0 0 45%;
 }
 
 .subtitle {
-  margin: 0 0 0 40px;
+  margin: 0 18% 2% 44.8%;
 }
 
 .search {
-  margin: 20% 0 0 28%;
+  margin: 0 0 0 31%;
   width: 40%;
   padding: 18px 25px;
   font-size: 16px;
@@ -60,4 +60,51 @@ body {
 .ion-search {
   display: inline-block;
   font-size: 250%;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+}
+
+.nav-top {
+  margin: 0;
+}*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #dbdbdb;
+  font-family: 'Lato', 'Verdana', sans-serif;
+  text-rendering: optimizeLegibility;
+  font-size: 20px;
+  font-weight: 300;
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/background.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/background.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+
+.logo {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 350%;
+  text-align: center;
+  margin-top: 200px;
+  padding: 10px;
+}
+
+.tagLine {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 130%;
+  text-align: center;
+  text-transform: capitalize;
 }
