@@ -29,12 +29,14 @@ body {
 
 .title {
   font-size: 32px;
+  font-family: 'Alte Haas Grotesk Bold', sans-serif;
   text-align: center;
   color: #30373B;
   padding: 0;
   margin: 25px 40px;
   word-spacing: 1px;
-  letter-spacing: 1px
+  letter-spacing: 1px;
+  font-weight: bolder;
 }
 
 
@@ -53,7 +55,7 @@ body {
 
 .subtitle {
   font-size: 20px;
-  color: #949494;
+  color: #464646;
   text-align: center;
   border: 0;
   padding: 15px;

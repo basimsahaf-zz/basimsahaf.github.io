@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  color: #dbdbdb;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  border-color: #A7A7A7;
+  text-rendering: optimizeLegibility;
+  font-size: 18px;
+  margin: 20px 20px;
+  overflow: hidden;
+}
+
+
+body {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(ibackground.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(background.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.title {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 300%;
+  margin: 40px 0 0 40px;
+}
+
+.subtitle {
+  margin: 0 0 0 40px;
+}
+
+.search {
+  margin: 20% 0 0 28%;
+  width: 40%;
+  padding: 18px 25px;
+  font-size: 16px;
+  display: inline-block;
+  border: 1px solid #A7A7A7;
+  border-radius: 5px;
+}
+
+.button {
+  margin: 3px;
+  width: 5%;
+  text-align: center;
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  border: 0;
+  padding: 8px 25px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.ion-search {
+  display: inline-block;
+  font-size: 250%;
+}
