@@ -29,3 +29,9 @@ function validiateInput() {
     $(".error-message").addClass("animated fadeOutDown");
   }
 }
+
+function checkEnter(event){
+  if(event.keyCode==13){
+    validiateInput();
+  }
+}

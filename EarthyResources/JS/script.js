@@ -11,3 +11,9 @@ function changeIcon (){
     }
     return false;
 }
+
+function checkEnter(event){
+    if(event.keyCode==13){
+        changeIcon();
+    }
+}
