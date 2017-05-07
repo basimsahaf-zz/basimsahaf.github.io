@@ -9,7 +9,6 @@ function validiateInput() {
     /* validiates the input */
     $("#error").text("There was an error with your email"); /*error message */
     $("#error").addClass("animated shake"); /* effects on error message*/
-    return false;
   } else {
     /*dynamically changes the title and subtitle text */
     $("#title").text("Please check your email");
@@ -29,6 +28,9 @@ function validiateInput() {
     $(".error-message").addClass("animated fadeOutDown");
   }
 }
+
+/*checkEnter(event) calls the validiateInput() if user presses the
+  enter key while typing in the textbox.*/
 
 function checkEnter(event){
   if(event.keyCode==13){
