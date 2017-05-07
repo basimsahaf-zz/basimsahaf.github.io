@@ -23,7 +23,7 @@ html {
   font-family: 'Advent Pro', sans-serif;
   font-size: 350%;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 100px;
   margin-left: 45%;
   text-transform: capitalize;
   float: left;
@@ -68,7 +68,7 @@ html {
 }
 
 .searchBar {
-  margin: 100px 0 0 31%;
+  margin: 50px 0 0 31%;
   width: 40%;
   padding: 18px 25px;
   font-size: 16px;
@@ -100,4 +100,24 @@ html {
 .ion-heart:hover {
   color: #a00;
   text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.logoAfter {
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 350%;
+  text-transform: capitalize;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.tagLineAfter {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 130%;
+  text-transform: capitalize;
+  padding: 15px;
+  padding-top: 0;
 }
