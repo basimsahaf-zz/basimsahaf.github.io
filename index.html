@@ -1,107 +1,109 @@
 <!DOCTYPE html>
-<html lag="en">
-    <head>
-        <link rel = "stylesheet" type="text/css" href ="Vendors/css/normalize.css">
-        <link rel = "stylesheet" type="text/css" href="Resources/css/style.css">    
-        <link rel="stylesheet" type="text/css" href="Vendors/css/grid.css">
-        <link rel="stylesheet" type="text/css" href="Vendors/css/animate.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Dr+Sugiyama" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="icon" href="favicon.ico">
-        <title> Basim Sahaf </title>
-    </head>
-    <body>
-<script>
-	jQuery('body').css('display','none');
-	jQuery(document).ready(function() {
-		jQuery('body').fadeIn();
-		jQuery('a').on('click',function(event){
-			var thetarget = this.getAttribute('target')
-			if (thetarget != "_blank"){			
-				var thehref = this.getAttribute('href')
-				event.preventDefault();
-				jQuery('body').fadeOut(function(){
-					//alert(thehref)
-					window.location = thehref					
-				});
-			}
-		});
-	});
-	setTimeout(function(){
-		jQuery('body').fadeIn();
-	},2000)
+<html>
+<head>
+  <title>Basim Sahaf</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="Resources/CSS/style.css">
+  <link rel="stylesheet" href="Resources/CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="Resources/CSS/bootstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Advent+Pro:400,500|Heebo:800|Laila|Lato:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/0c91279300.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#parallax">EDUCATION</a></li>
+          <li><a href="#parallax-research">RESEARCH</a></li>
+          <li><a href="#parallaxHack">PROJECTS</a></li>
+          <script src="script.js"></script>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+<div id="home" class="container-fluid">
+  <img src="Resources/CSS/Images/20170415-DSC_0882%20(1).jpg" class="header-image" height="236">
+  <div class="nameTitle">BASIM SAHAF</div>
+  <div class="Bio">Researcher at <b>HCI Games</b>, Computer Science undergrad at <b>uWaterloo</b>,<br> lover of <b>code</b> and <b>mathematics</b>.</div>
+  <div class="social-media">
+    <a href="https://www.linkedin.com/in/basimsahaf" data-toggle="tooltip" title="LinkedIn" data-placement="bottom"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    <a href="https://github.com/basimsahaf/" data-toggle="tooltip" title="GitHub" data-placement="bottom"><i class="fa fa-github" aria-hidden="true"></i></a> 
+    <a href="https://www.quora.com/profile/Basim-Sultan-Sahaf" data-toggle="tooltip" title="Quora" data-placement="bottom"><i class="fa fa-quora" aria-hidden="true"></i></a>
+    <a href="https://twitter.com/basimsahaf/" data-toggle="tooltip" title="Twitter" data-placement="bottom"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <a href="https://angel.co/basim-sahaf" data-toggle="tooltip" title="Angel" data-placement="bottom"><i class="fa fa-angellist" aria-hidden="true"></i></a>
+    <a href="mailto:bssahaf@edu.uwaterloo.ca" data-toggle="tooltip" title="Email me!" data-placement="bottom"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    <script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
 </script>
-        <div class="left-blue">
-            <div class="slideInDown"><p class="logo"><b>basimsahaf</b></p></div>
-                <div class="pulse"><img class="img-circle" src="Resources/css/Images/20170415-DSC_0882%20(1).jpg" class="picture"></div>
-                <h2 class="tagline">"YOU HAVE THE POWER TO REMOVE ALL  LIMITATIONS"</h2>
-            <div class="zoomIn"><h2 class="social">
-            <li><a href= "https://www.linkedin.com/in/basimsahaf/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true">
-                </i></a></li>
-                <li><a href="https://www.github.com/basimsahaf/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.quora.com/profile/Basim-Sultan-Sahaf" target="_blank"><i class="fa fa-quora" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.twitter.com/basimsahaf/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="https://angel.co/basim-sahaf" target="_blank"><i class="fa fa-angellist" aria-hidden="true"></i></a></li>
-            </h2></div>
-            <div class="bio">
-                <div class="topic"><h4>About Me:</h4></div>
-                <div class="info">
-                    <p class="nice-text">I am a Computer Science student at the University of Waterloo. My areas of interest include Data Science, Web Development and Artificial Intelligence. I love to code and am always curious to learn new things everyday. Apart from this, I have an immense interest in world politics and affairs. I am also an active human rights activist and an ardent environmentalist. </p></div></div>
-            <div class="pulse"><div class="bottom-line"><p>Made with <i class="fa fa-heart" aria-hidden="true"></i> by Basim</p>
-        </div></div>
-        </div>
-        <div style="clear:both"></div>
-        <div class="right-white">
-                <nav class="sticky">
-            <ul class="main-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="Resources/data/current%20resume.pdf" target="_blank">Resumé</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                    </ul></nav>
-            <div class="container">
-                <div class="header">
-                <h2 class="blue-head"> WORK EXPERIENCE :</h2></div>
-                <div class="info-white">
-                <p><b> HCI Games</b>
-                    <span style="float:right; font-size:15px; margin-right: 20px;"><i>Starting May 2017</i></span>
-                    <p>Software Engineering Intern/UI Researcher <br>Waterloo, Canada</p>
-            </div>
-                <div class="header">
-                <h2 class="blue-head"> EDUCATION :</h2></div>
-                    <div class="info-white">
-                    <p><b>Bachelor's of Computer Science</b><span style="float:right; font-size:15px; margin-right: 20px;"><i>2016-2021</i></span><br>David Cheriton School of Computer Science <br> University of Waterloo, Canada </div>
-                <div class="header">
-                <h2 class="blue-head"> WHY DID I CHOOSE COMPUTER SCIENCE?</h2></div>
-                <div class="info-white">
-                    <p class="nice-text">I have always been fascinated by logic and mathematics. The combination of two discovered Gravity, Quarks, the God Particle and of course, processors. Computer Science brings the two together in an apt way, enabling us to create and innovate. My passion for logic and innovation made me choose computer science and I'm loving it so far. My journey has just started, and it definitely is going to be a long, long one! </p>
-                    <div class="header">
-                <h2 class="blue-head"> WHY DID I CHOOSE THE UNIVERSITY OF WATERLOO?</h2></div>
-                <div class="info-white">
-                    <p class="nice-text">A leading university in Computer Science and Mathematics, University of Waterloo turned out to be the right place for me. Following are the two reasons that made me choose UWaterloo:</p>
-                    <div class="bullets"><li>Ability to get our hands dirty in the industry through the co-op program</li>
-                    <li>Focus on the mathematical knowledge of Computer Science</li></div></div>
-                <h2 class="blue-head"> EVENTS I HAVE ATTENDED:</h2></div>
-                <p class="nice-text"></p>
-                <div class="info-white"> <p>I love to take part in hackathons and technology conferences. Some of the recent ones I attended are:</p>
-                    <div class="bullets"><li>PennApps, University of Pennsylvannia, United States<span style="float:right; font-size:15px; margin-right: 20px;"><i>January 2017</i></span></li>
-                    <li>Start Hacks, Waterloo Canada<span style="float:right; font-size:15px; margin-right: 20px;"><i>March 2017</i></span></li></div></div>
-            <div class="header">
-                <h2 class="blue-head"> MOVIES :</h2></div>
-                <div class="info-white"> I love watching movies. Some of my favorites are : </div>
-                <div class="col span-1-of-4">
-                <img class="movies" src="Resources/css/Images/yjhd.jpg" >
-                <p class="movie-title"><b>Yeh Jawani Hai Deewani</b></p></div>
-                <div class="col span-1-of-4">
-                <img class="movies" src="Resources/css/Images/znmd.jpg" >
-                <p class="movie-title"><b>Zindagi Na Milegi Dobara</b></p></div>
-                <div class="col span-1-of-4">
-                <img class="movies" src="Resources/css/Images/pursuit.jpg" >
-                <p class="movie-title"><b>The Pursuit of Happyness</b></p></div>
-            </div>
-        </div>
-    </body>
+  </div>
+  <div class="arrow"><a href="#section2"><i class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
+  </div>
+  <div id="aboutMe" class="container0fluid">
+    <div class="headingAboutMe">About Me</div>
+    <div class="aboutMeText"></div>
+  </div>
+  <div id="parallax" class="container-fluid">AN OVERVIEW OF MY ACADEMIC CAREER</div>
+<div id="section2" class="container-fluid">
+  <div class="section group">
+	<div class="col span_1_of_2-edu">
+      <img src="/Resources/CSS/Images/waterloologo.png" class="schoolLogo">
+      <div class="schoolInfo"><h3>Bachelor's of Computer Science<br>David Cheriton School<br>University of Waterloo, Canada<br>Class of 2021</h3></div>
+	</div>
+	<div class="col span_1_of_2-edu">
+      <img src="Resources/CSS/Images/fiitjee.png" class="schoolLogo ftjee">
+	<div class="schoolInfo ftjeeInfo"><h3>High School<br>FIITJEE South Delhi<br>90%, A</h3></div>
+	</div>
+</div>
+  </div>
+  <div id="parallax-research" class="container-fluid">I JUST STARTED MY RESEARCH CAREER, HAVE A LOOK</div>
+<div id="section3" class="container-fluid">
+  <ul class="hciPoints">
+    Started working at the <b>Human-Computer Interaction Lab</b> at the University of Waterloo in <i>May 2017</i>. I am currently: <br><br>
+    <li>Researching on the ‘gamification’ of exercises used in the treatment of Parkinson’s disease.</li><br>
+    <li>Researching the use of ‘Biologically Inspired Algorithms’ in a game called ‘Tagorithms’.</li><br>
+    <li>Researching on the gamification of exercises used to increase mental attention and meditation.</li>
+  </ul>
+</div>
+  <div class="parallaxHack" id="parallaxHack">I LOVE DOING PROJECTS TOO</div>
+<div id="section4" class="container-fluid">
+  <div class="section group">
+	<div class="col span_1_of_3">
+	 <h1>MedHist</h1><h4>Pay for health, not business</h4>
+	</div>
+	<div class="col span_1_of_3">
+	<h1>Earthy</h1><h4>The Earth Dictionary</h4>
+	</div>
+	<div class="col span_1_of_3">
+	<h1>Caffeine</h1><h4>Safer roads, safer you.</h4>
+	</div>
+</div>
+</div>
+  
+<!--<div id="section42" class="container-fluid">
+  <h1>Section 4 Submenu 2</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+<div class="heart"></div>-------remember
+</div>-->
+
+</body>
 </html>

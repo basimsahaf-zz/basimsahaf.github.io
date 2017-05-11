@@ -1,14 +1,15 @@
 /* validiateInput() extracts the user input, validiates it and
    dynamically manipulates the HTML using the decision tree. */
-
 function validiateInput() {
   var input = $("#email").val(); /* stores the user input */
   var atIndex = input.indexOf("@");
   var dotIndex = input.lastIndexOf(".");
+  /* validiates the input */
   if (atIndex < 1 || dotIndex < atIndex + 2 || dotIndex + 2 >= input.length) {
-    /* validiates the input */
-    $("#error").text("There was an error with your email"); /*error message */
-    $("#error").addClass("animated shake"); /* effects on error message*/
+    /*error message */
+    $("#error").text("There was an error with your email"); 
+    /* effects on error message*/
+    $("#error").addClass("animated shake"); 
   } else {
     /*dynamically changes the title and subtitle text */
     $("#title").text("Please check your email");
@@ -29,9 +30,9 @@ function validiateInput() {
   }
 }
 
+
 /*checkEnter(event) calls the validiateInput() if user presses the
   enter key while typing in the textbox.*/
-
 function checkEnter(event){
   if(event.keyCode==13){
     validiateInput();
