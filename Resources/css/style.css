@@ -10,7 +10,7 @@ body {
       padding-top:10px;
       height:1024px;
       color: #fff;
-      background-image: url(Images/1.jpeg);
+      background-image: url(1.jpeg);
       background-position: center;
       background-size: cover;
       position: relative;
@@ -238,7 +238,7 @@ h2{
 
 
 .parallaxHack {
-      background-image: url(/Resources/CSS/Images/hackathon.jpg);
+      background-image: url(Images/hackathon.jpg);
       padding-top:50px;
       height:200px;
       background-attachment: fixed;
