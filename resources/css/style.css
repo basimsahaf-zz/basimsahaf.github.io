@@ -96,11 +96,11 @@ h2{
       text-align: center;
       font-size: 350%;
       font-family: 'Lato', serif;
-      color: #eaeaea;
       padding: 5px; 
       letter-spacing: 2px;
       font-weight: bolder;
       transition: 1s;
+      color: rgba(255, 255, 255, 0.81);
 }
 
 
@@ -127,6 +127,7 @@ h2{
       font-size: 150%;
       padding: 40px;
       word-spacing: 2px;
+      color: rgba(255, 255, 255, 0.54);
 }
 
 .arrow {
@@ -169,8 +170,10 @@ h2{
       margin-top: 0;
       font-size: 90%;
       float: left;
-      margin-left: 10%;
+      margin-left: 5%;
 }
+
+
 /*
 .Edu1{
       font-size: 210%;
@@ -254,19 +257,23 @@ h2{
       font-weight: bolder;
 }
 
-
+.footer {
+      position: absolute;
+      left: 47%;
+      bottom: 1%;
+}
       
 .heart {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  left: 50%;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      left: 50%;
       bottom: 0;
-  transform: translate(-50%, -50%);
-  background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;
-  background-position: 0 0;
-  cursor: pointer;
-  animation: fave-heart 1s steps(28);
+      transform: translate(-50%, -50%);
+      background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;
+      background-position: 0 0;
+      cursor: pointer;
+      animation: fave-heart 1s steps(28);
 }
       
 .heart:hover {
@@ -438,5 +445,39 @@ h3 {
       }
       .ftjeeInfo{
             margin-left: 10px;
+      }
+}
+
+@media only screen and (max-width: 375px) {
+       #parallax {
+            font-size: 180%;
+      }
+      #parallax-research {
+            font-size: 180%;
+      }
+      #parallaxHack{
+            font-size: 180%;
+      }
+      .hciPoints {
+            font-size: 140%;
+            text-align: justify;
+            padding: 12px;
+      }
+      #section3{
+            padding-top:40px;
+            height: 550px; 
+      }
+      .ftjeeInfo{
+            margin-left: 20px;
+      }
+      .nameTitle {
+            font-size: 300%;
+      }
+      .Bio {
+            font-size: 110%;
+            padding: 0;
+      }
+      .footer {
+            margin-left: -14%;
       }
 }
