@@ -421,14 +421,22 @@ h3 {
 /* Small phones to small tablets from 480px to 767px*/
 
 @media only screen and (max-width: 767px) {
-  html {
-    margin-top: 50px;
-  }
-  .button {
-    font-size: 100%;
-  }
-  .email,
-  select {
-    font-size: 100%;
-  }
+      #parallax {
+            font-size: 230%;
+      }
+      #parallax-research {
+            font-size: 230%;
+      }
+      #parallaxHack{
+            font-size: 230%;
+      }
+      .hciPoints {
+            font-size: 150%;
+      }
+      #section3{
+            padding-top:50px;
+      }
+      .ftjeeInfo{
+            margin-left: 10px;
+      }
 }
