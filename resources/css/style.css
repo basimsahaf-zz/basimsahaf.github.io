@@ -1,0 +1,434 @@
+* {
+      box-sizing: border-box;
+}
+
+body {
+      position: relative; 
+  }
+  
+#home {
+      padding-top:10px;
+      height:1024px;
+      color: #fff;
+      background-image: url(img/1.jpeg);
+      background-position: center;
+      background-size: cover;
+      position: relative;
+}
+
+#aboutMe {
+      padding-top:50px;
+      height:500px;
+      color: #fff;
+      background-color: #ecf0f1;
+}
+
+.headingAboutMe { 
+      text-align: center;
+      color: black;
+      margin-left: 43.5%;
+      margin-right: 43.5%;
+      font-family: 'Lato', sans-serif;
+      font-size: 300%;
+      padding-bottom: 2px;
+      transition: border-bottom 0.4s;
+}
+
+.headingAboutMe:hover,
+.headingAboutMe:active {
+      border-bottom: 1px solid black;
+}
+
+#section2 {
+      padding-top:85px;
+      height:500px;
+      color: #fff;
+      background-color: #222d33;
+}
+#section3 {
+      padding-top:130px;
+      height:724px;
+      background-color: #ecf0f1;
+      font-family: 'Lato', sans-serif;
+}
+#section4 {
+      padding-top:50px;
+      height:1024px;
+      color: #fff;
+      background-color: #222d33;
+}
+#section42 {
+      padding-top:50px;
+      height:1024px;
+      color: #fff;
+      background-color: #34495e;
+}
+
+h2{
+      padding: 50px;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: bolder;
+      letter-spacing: 1px;
+      word-spacing: 1px;
+}
+
+.navbar-default {
+    background-color: goldenrod;
+}
+
+
+.header-image {
+      border-radius: 50%;
+      display: block;
+      margin: 150px auto 20px auto;
+      padding: 5px;
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      transition: border 1s;
+}
+
+.header-image:hover,
+.header-image:active {
+      border: 1px solid white;
+}
+
+
+.nameTitle {
+      text-align: center;
+      font-size: 350%;
+      font-family: 'Lato', serif;
+      color: #eaeaea;
+      padding: 5px; 
+      letter-spacing: 2px;
+      font-weight: bolder;
+      transition: 1s;
+}
+
+
+.social-media {
+      text-align: center;
+      font-size: 300%;
+}
+
+.fa {
+      padding: 10px;
+      color: rgba(186, 186, 186, 0.6);
+      transition: 1s;
+}
+
+.fa:hover,
+.fa:active {
+      color: white;
+      transition: 1s;
+}
+
+.Bio {
+      font-family: 'Lato', serif;
+      text-align: center;
+      font-size: 150%;
+      padding: 40px;
+      word-spacing: 2px;
+}
+
+.arrow {
+      font-size: 400%;
+      bottom: 0;
+      text-align: center;
+      right: 0;
+      left: 0;
+      padding: 40px;
+      position: absolute;
+}
+
+#parallax {
+      background-image: url(img/parallax.jpg);
+      padding-top:50px;
+      height:200px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+      color: black;
+      font-size: 300%;
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 3px;
+      word-spacing: 1px;
+      font-weight: bolder;
+}
+
+.schoolLogo {
+      width: 30%;
+      padding:5px;
+      margin-top: 2%;
+      text-align: left;
+      float: left;
+}
+
+.schoolInfo {
+      font-family: 'Lato', sans-serif;
+      margin-top: 0;
+      font-size: 90%;
+      float: left;
+      margin-left: 10%;
+}
+/*
+.Edu1{
+      font-size: 210%;
+      margin-top: 5%;
+}
+
+.previousEdu {
+      font-family: 'Lato', sans-serif;
+      margin-left: 28%;
+      font-size: 150%;
+      letter-spacing: 1px;
+      word-spacing: 2px;
+      margin-top: 3%;
+}
+
+.bhsLogo{
+      width: 15%;
+      padding: 20px;
+      margin-left: 25%;
+      margin-bottom: 8%;
+}
+
+.schoolInfo-bhs {
+      font-family: 'Lato', sans-serif;
+      float: right;
+      margin-right: 45%;
+      margin-top: 2%;
+}*/
+
+#parallax-research {
+      background-image: url(img/research.jpg);
+      background-blend-mode:color;
+      padding-top:50px;
+      height:200px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+      color: black;
+      font-size: 300%;
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 3px;
+      word-spacing: 1px;
+      font-weight: bolder;
+}
+
+
+.hciPoints {
+      color: black;
+      font-size: 200%;
+      text-align: center;
+      letter-spacing: 3px;
+      word-spacing: 1px;
+      padding-left: 370px;
+      padding-right: 370px;
+}
+
+.hciPoints li {
+      font-size: 90%;
+      text-align: justify;
+      letter-spacing: 2px;
+      word-spacing: 0.5px;
+}
+
+
+.parallaxHack {
+      background-image: url(img/hackathon.jpg);
+      padding-top:50px;
+      height:200px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+      color: black;
+      font-size: 300%;
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 3px;
+      word-spacing: 1px;
+      font-weight: bolder;
+}
+
+
+      
+.heart {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+      bottom: 0;
+  transform: translate(-50%, -50%);
+  background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  animation: fave-heart 1s steps(28);
+}
+      
+.heart:hover {
+  background-position: -2800px 0;
+  transition: background 1s steps(28);
+}
+@keyframes fave-heart {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2800px 0;
+      }
+}
+}
+      
+      /*  SECTIONS  */
+.section {
+	clear: both;
+	margin: 10px;
+
+}
+
+/*  COLUMN SETUP  */
+.col {
+      display: block;
+      float:left;
+      margin: 1% 0 1% 0%;
+      padding-left: 150px;
+}
+.col:first-child {
+      margin-left: 0;
+}
+
+/*  GROUPING  */
+.group:before,
+.group:after { 
+      content:"";
+      display:table;
+}
+.group:after {
+      clear:both;
+}
+.group {
+      zoom:1; /* For IE 6/7 */
+}
+/*  GRID OF THREE  */
+.span_3_of_3 { 
+      width: 100%;
+}
+.span_2_of_3 { width: 66%; }
+.span_1_of_3 { width: 32%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+
+
+h3 {
+      letter-spacing: 1px;
+      word-spacing: 1px;
+}
+
+/*  GRID OF TWO  */
+.span_2_of_2-edu {
+	width: 100%;
+}
+.span_1_of_2-edu {
+	width: 49%;
+}
+
+/* Big tablets to 1400px(normal laptop screen sizes)*/
+
+@media only screen and (max-width: 1400px) {
+      .hciPoints {
+            padding-left: 50px;
+            padding-right: 50px;
+      }
+      .schoolLogo {
+            width: 30%;
+            padding: 20px;
+            margin-left: 5%;
+            float: left;
+      }
+      .schoolInfo{
+            margin-right: 0;
+      }
+      .Edu1{
+            font-size: 200%;
+            margin: 5% 0.1%;
+      }
+      #section2 {
+            height: 550px;
+      }
+      .previousEdu {
+            font-family: 'Lato', sans-serif;
+            font-size: 120%;
+            letter-spacing: 0.5px;
+            word-spacing: 1px;
+            margin-left: 35.5%
+      }
+      .navbar-default {
+            margin-left: 70px;
+      }
+      .headingAboutMe { 
+            margin-left: 30%;
+            margin-right: 30%;
+      }
+      .schoolLogo {
+      width: 35%;
+      padding:5px;
+      margin-top: 2%;
+            margin-left: 40%
+}
+
+      .schoolInfo {
+      font-family: 'Lato', sans-serif;
+      margin-top: 0;
+            text-align: center;
+      }
+      
+      .ftjee{
+            margin-top: 15%;
+         margin-bottom: 18%;
+            width: 50%
+      }
+      .ftjeeInfo{
+            margin-left: 150px;
+            
+      }
+      .col {
+	display: block;
+	float:left;
+	margin: 0;
+  padding-left: 0;
+}
+}
+
+
+
+/* Small tablets to big tablets from 768px to 1023px*/
+
+@media only screen and (max-width: 1023px) {
+  .container {
+    margin: 0 5%;
+  }
+}
+
+
+/* Small phones to small tablets from 480px to 767px*/
+
+@media only screen and (max-width: 767px) {
+  html {
+    margin-top: 50px;
+  }
+  .button {
+    font-size: 100%;
+  }
+  .email,
+  select {
+    font-size: 100%;
+  }
+}
