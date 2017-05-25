@@ -31,12 +31,13 @@ body {
       font-family: 'Lato', sans-serif;
       font-size: 300%;
       padding-bottom: 2px;
-      transition: border-bottom 0.4s;
+      transition:all 0.3s ease;
 }
 
 .headingAboutMe:hover,
 .headingAboutMe:active {
-      border-bottom: 1px solid black;
+      border-bottom:1px solid black;
+      transition:all 0.3s ease;
 }
 
 #section2 {
@@ -48,14 +49,13 @@ body {
 #section3 {
       padding-top:130px;
       height:724px;
-      background-color: #ecf0f1;
+      background-color: #1d1f1f;
       font-family: 'Lato', sans-serif;
 }
 #section4 {
       padding-top:50px;
-      height:1024px;
-      color: #fff;
-      background-color: #222d33;
+      height:1250px;
+      background-color: #ecf0f1;
 }
 #section42 {
       padding-top:50px;
@@ -217,9 +217,14 @@ h2{
       font-weight: bolder;
 }
 
+.spanHeader{
+      text-align: center;
+      border-bottom: 1px solid black;
+      
+}
 
 .hciPoints {
-      color: black;
+      color: rgba(255, 255, 255, 0.7);
       font-size: 200%;
       text-align: center;
       letter-spacing: 3px;
@@ -286,61 +291,76 @@ h2{
 }
 }
       
-      /*  SECTIONS  */
+*  SECTIONS  ============================================================================= */
+
 .section {
 	clear: both;
-	margin: 10px;
-
+	padding: 0px;
+	margin: 0px;
 }
 
-/*  COLUMN SETUP  */
-.col {
-      display: block;
-      float:left;
-      margin: 1% 0 1% 0%;
-      padding-left: 150px;
-}
-.col:first-child {
-      margin-left: 0;
-}
+/*  GROUPING  ============================================================================= */
 
-/*  GROUPING  */
+
 .group:before,
-.group:after { 
-      content:"";
-      display:table;
+.group:after {
+    content:"";
+    display:table;
 }
 .group:after {
-      clear:both;
+    clear:both;
 }
 .group {
-      zoom:1; /* For IE 6/7 */
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
 }
-/*  GRID OF THREE  */
-.span_3_of_3 { 
-      width: 100%;
-}
-.span_2_of_3 { width: 66%; }
-.span_1_of_3 { width: 32%; }
 
-/*  GO FULL WIDTH BELOW 480 PIXELS */
+/*  GRID COLUMN SETUP   ==================================================================== */
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+      font-family: 'Lato', sans-serif;
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
 @media only screen and (max-width: 480px) {
-	.col {  margin: 1% 0 1% 0%; }
-	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+.span_3_of_3 {
+	width: 100%; 
+}
+
+.span_2_of_3 {
+	width: 66.13%; 
+}
+
+.span_1_of_3 {
+	width: 32.26%;
+      border: 1px solid black;
+      border-radius: 5px;
 }
 
 
-h3 {
-      letter-spacing: 1px;
-      word-spacing: 1px;
-}
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
-/*  GRID OF TWO  */
-.span_2_of_2-edu {
-	width: 100%;
-}
-.span_1_of_2-edu {
-	width: 49%;
+@media only screen and (max-width: 480px) {
+	.span_3_of_3 {
+		width: 100%; 
+	}
+	.span_2_of_3 {
+		width: 100%; 
+	}
+	.span_1_of_3 {
+		width: 100%;
+	}
 }
 
 /* Big tablets to 1400px(normal laptop screen sizes)*/
@@ -410,7 +430,14 @@ h3 {
 }
 }
 
-
+.aboutMeText {
+      color: rgba(52, 73, 94, 0.63);
+      font-family: 'Lato', sans-serif;
+      text-align: center;
+      padding: 20px;
+      font-size: 180%;
+      margin: 0 15%;
+}
 
 /* Small tablets to big tablets from 768px to 1023px*/
 
@@ -439,12 +466,72 @@ h3 {
       #section3{
             padding-top:50px;
       }
-      .ftjeeInfo{
-            margin-left: 10px;
-      }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 420px) {
+      
+      #home {
+            padding-top: 0px;
+            height: 800px;
+      }
+      
+      #parallax {
+            font-size: 180%;
+      }
+      #parallax-research {
+            font-size: 180%;
+      }
+      #parallaxHack{
+            font-size: 180%;
+      }
+      .hciPoints {
+            font-size: 140%;
+            text-align: justify;
+            padding: 12px;
+      }
+      #section3{
+            padding-top:40px;
+            height: 550px; 
+      }
+      .nameTitle {
+            font-size: 300%;
+      }
+      .Bio {
+            font-size: 110%;
+            padding: 0;
+      }
+      .footer {
+            margin-left: -14%;
+      }
+      
+      .headingAboutMe { 
+            font-size: 220%;
+      }
+      .aboutMeText {
+            font-size: 132%;
+            margin: 0;
+            padding: 10px;
+      }
+      
+      #section4{
+            height: 3850px;
+      }
+      
+      .span_1_of_3 {
+            margin-bottom: 10px;
+      }
+      .arrow {
+            padding: 0;
+      
+      
+}
+
+
+      
+
+
+
+/*@media only screen and (max-width: 456px) {
        #parallax {
             font-size: 180%;
       }
@@ -463,9 +550,6 @@ h3 {
             padding-top:40px;
             height: 550px; 
       }
-      .ftjeeInfo{
-            margin-left: 20px;
-      }
       .nameTitle {
             font-size: 300%;
       }
@@ -476,4 +560,48 @@ h3 {
       .footer {
             margin-left: -14%;
       }
+      
+      .headingAboutMe { 
+            font-size: 220%;
+      }
+      .aboutMeText {
+            font-size: 132%;
+            margin: 0;
+            padding: 10px;
+      }
+      
+      #section4{
+            height: 3600px;
+      }
+      
+      .span_1_of_3 {
+            margin-bottom: 10px;
+      }
+      
+      
+}*/
+
+
+
+
+.section{
+      margin: 0 8%;
+}
+
+.github {
+      width: 48.78px;
+      height: 20px;
+      text-align: center;
+      margin: 2%;
+}
+
+.projectBullets {
+      text-align: justify;
+      padding: 35px;
+      font-size: 140%;
+}
+
+.last {
+      margin-top: 10%;
+      border: none;
 }
