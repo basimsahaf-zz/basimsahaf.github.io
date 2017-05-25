@@ -477,12 +477,27 @@ h2{
       
       #parallax {
             font-size: 180%;
+            background-image: url(img/parallax.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
       }
       #parallax-research {
             font-size: 180%;
+            background-image: url(img/research.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
       }
       #parallaxHack{
             font-size: 180%;
+            background-image: url(img/hackathon.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
       }
       .hciPoints {
             font-size: 140%;
