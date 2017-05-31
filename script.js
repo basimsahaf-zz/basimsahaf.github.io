@@ -1,5 +1,7 @@
 var scores, roundScore, activePlayer, gamePlaying;
 
+var endGame = new Audio("end.mp3");
+
 init();
 
 document.querySelector('.btn-roll').addEventListener('click', function (){
@@ -27,7 +29,10 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
         if(scores[activePlayer] >= 20){
             document.getElementById('name-'+ activePlayer).textContent='WINNER!';
             document.querySelector('.dice').style.display='none';
+            document.querySelector('.btn-hold').style.display='none';
+            document.querySelector('.btn-roll').style.display='none';
             gamePlaying=false;
+            endGame.play();
         } else {
             changePlayer();
         }
@@ -66,3 +71,5 @@ function init() {
     document.querySelector('.player-0-panel').classList.remove('winner');
     document.querySelector('.player-1-panel').classList.remove('winner');
 }
+                                                    
+                                                    
