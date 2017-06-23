@@ -64,6 +64,22 @@ body {
       background-color: #34495e;
 }
 
+#footer {
+      color: white;
+      height:154px;
+      background-color: #1d1f1f;
+      font-family: 'Lato', sans-serif;
+}
+
+.footerClass {
+      text-align: center;
+      padding-top: 60px;
+      font-family: 'Lato', sans-serif;
+      word-spacing: 1px;
+      letter-spacing: 1px;
+}
+
+
 h2{
       padding: 50px;
       font-family: 'Quicksand', sans-serif;
