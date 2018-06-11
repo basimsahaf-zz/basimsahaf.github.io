@@ -16,7 +16,6 @@ theme: jekyll-theme-primer
 plugins:
   - jekyll-seo-tag
 
-title: "👋 Hello, GitHub"
 description: "@basimsahaf"
 
 twitter:
